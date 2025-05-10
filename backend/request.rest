@@ -1,0 +1,27 @@
+GET http://localhost:5000/catatan
+
+###
+GET http://localhost:5000/catatan/1
+
+###
+POST http://localhost:5000/add-catatan
+Content-Type: application/json
+
+{
+    "penulis": "dhea",
+    "judul": "catatan",
+    "isi": "otiwi banten"
+}
+
+###
+PUT http://localhost:5000/catatan/1
+Content-Type: application/json
+
+{
+    "penulis": "bjir",
+    "judul": "bjir@gmail.com",
+    "isi": "Male"
+}
+
+###
+DELETE http://localhost:5000/users/1
