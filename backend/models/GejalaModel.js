@@ -23,8 +23,9 @@ const Gejala = db.define("gejala", {
   timestamps: false
 });
 
-export default Gejala;
-
 (async () => {
   await db.sync();
 })();
+
+
+export default Gejala;
